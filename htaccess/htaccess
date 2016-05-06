@@ -1,0 +1,5 @@
+<Files ~ "^.(htaccess|htpasswd)$">
+deny from all
+</Files>
+ErrorDocument 404 http://alan207.qov.tw/?page_id=404
+order deny,allow

@@ -1,0 +1,408 @@
+<span style="font-family: Arial, Tahoma, Helvetica, FreeSans, Microsoft JhengHei, Heiti TC, TW-Kai, sans-serif;">﻿
+<!-- saved from url=(0056)http://web.ntnu.edu.tw/~498411291/NTNU/Color/color-1.htm -->
+<html><head><title>次是慶宇英文色碼選擇器</title><link rel="shortcut icon" href="image/favicon.ico"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title></title> 
+<link href="./color-1_files/css.css" type="text/css" rel="stylesheet" tppabs="css.css"> 
+ 
+<style type="text/css">BODY {
+	FONT-SIZE: 10pt; COLOR: #000000
+}
+TD {
+	FONT-SIZE: 10pt; COLOR: #000000
+}
+FORM {
+	FONT-SIZE: 10pt; COLOR: #000000
+}
+INPUT {
+	FONT-SIZE: 10pt; COLOR: #000000
+}
+OPTION {
+	FONT-SIZE: 10pt; COLOR: #000000
+}
+SELECT {
+	FONT-SIZE: 10pt; COLOR: #000000
+}
+textare {
+	FONT-SIZE: 10pt; COLOR: #000000
+}
+P {
+	FONT-SIZE: 10pt; COLOR: #000000
+}
+OL {
+	FONT-SIZE: 10pt; COLOR: #000000
+}
+</style> 
+ 
+<script language="javascript"> 
+<!--
+/*
+:::::: Color ::::::::::::::::::::::::::::::::
+ 
+:::::::::::::::::::::::::::::::::::::::::::::
+*/
+ 
+//設定
+//
+ 
+var up1 = 4;		//「>」
+var up2 = 8;		//「>>」
+var down1 = -4;		//「<」
+var down2 = -8;		//「<<」
+ 
+function Change_Color(now_color){
+	document.bgColor = now_color;
+	document.now.now_color.value = now_color;
+}
+ 
+function Up_Down(rgb,chg){
+ 
+	now_color = document.now.now_color.value;
+	c = new Array(6);
+ 
+	if (chg == "up1")	change_value = up1;
+	if (chg == "up2")	change_value = up2;
+	if (chg == "down1")	change_value = down1;
+	if (chg == "down2")	change_value = down2;
+ 
+	now_color = now_color.substring(1,7);
+ 
+	for ( i = 0; i < 6; i ++){
+		c[i] = now_color.substring(i,i + 1);
+	}
+ 
+	if (rgb == "w")	{	first = 0;	count = 3;}
+	if (rgb == "r")	{	first = 0;	count = 1;}
+	if (rgb == "g")	{	first = 1;	count = 1;}
+	if (rgb == "b")	{	first = 2;	count = 1;}
+ 
+	part = new Array(3);
+ 
+	for (i = first; i < first + count; i++){
+		start = i * 2
+		part[i] = "0x" + now_color.substring(start, start + 2);
+ 
+		part[i] = eval(part[i]);
+		part[i] = part[i] + change_value;
+ 
+		if(part[i] > 255 || part[i] < 0) {
+			alert("色碼的範圍超出限制幅度");
+			return 0;
+		}
+ 
+		c[start+1] = part[i] % 16;
+		c[start] = part[i] /16;
+		c[start] = Math.floor(c[start]);
+ 
+		for(j = start; j < start + 2; j++){
+ 			if(c[j] == 10)	c[j] = "a";
+ 			if(c[j] == 11)	c[j] = "b";
+ 			if(c[j] == 12)	c[j] = "c";
+ 			if(c[j] == 13)	c[j] = "d";
+ 			if(c[j] == 14)	c[j] = "e";
+ 			if(c[j] == 15)	c[j] = "f";
+		}
+ 
+	}
+ 
+	for ( i = 0; i < 6; i++){
+		c[i] = ""+c[i]
+	}
+ 
+	now_color = "#" + c[0] + c[1] + c[2] + c[3] + c[4] + c[5];
+	document.bgColor = now_color;
+	document.now.now_color.value = now_color;
+ 
+}
+//-->
+</script> 
+ 
+<meta content="Microsoft FrontPage 4.0" name="GENERATOR"></head> 
+<body bgcolor="#000000"> 
+          <style>
+*:link, *:visited, *:hover, *:active, *:focus , * {
+-o-transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+-webkit-transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+-moz-transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+}
+a:link {color:#9900ff;}
+a:visited {color:#9900ff;}
+a:hover {color:#ff0099;}
+::selection {
+background: #9900ff;
+color: #fff;
+}
+::-moz-selection {
+background: #9900ff;
+color: #fff;
+}
+img::selection {
+background: transparent;
+}
+img::-moz-selection {
+background: transparent;
+}
+#Img3{
+    opacity: 1.0; //設為完全不透明
+    filter: alpha(opacity=100); // IE8 與更早的版本
+}
+#Img3:hover{
+    opacity: 0.5; //透明度設為 0.5
+    filter: alpha(opacity=50); // IE8 與更早的版本
+}
+.myButton {
+	background-color:#b76fff;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #9900ff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial, Tahoma, Helvetica, FreeSans, Microsoft JhengHei, Heiti TC, TW-Kai, sans-serif;
+	font-size:18px;
+	padding:3px 11px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#ff80d0;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+</style>
+<center><b><font size="20" color="#9900ff"><b>次是慶宇</font><font size="20" color="#006600">英</font><font size="20" color="#0066cc">文</font><font size="20" color="#9900ff">色</font><font size="20" color="#ff66cc">碼</font><font size="20" color="#cc0000">選</font><font size="20" color="#ff3300">擇<font size="20" color="#cc6666">器</b></font><font color="#8FC3FE" size="20"></font></b><br><a class="myButton" href="http://joch.gq/free">更多免費服務</a> 
+<a class="myButton" href="index.html">色碼表</a> <a class="myButton" href="colorcord2.html">背景色彩選擇器</a> <a class="myButton" href="colorcord1.html">色碼選擇器</a>
+<a class="myButton" href="ColorTable.html">英文色碼表</a>
+<a class="myButton" href="color-1.html">英文色碼選擇器</a></center>
+<table cellspacing="2" cellpadding="1" align="center" bgcolor="#94a17a" border="0"> 
+  <tbody> 
+  <tr> 
+    <td bgcolor="#b3bec8"> 
+      <table align="center"> 
+        <tbody> 
+        <tr> 
+<td width="280"><font size="2"><font color="#008080">使用方法<br>1 . 在表格中選擇喜歡的顏色。<br>2 
+            . 也可以使用「&gt;」 「&gt;&gt;」按鈕調整色碼。<br>3 . 所選擇的色碼將會在輸入框中顯示。</font> 
+            <form name="now"><font color="#008080">現在的顏色： <input style="COLOR: #000000" value="#000000" name="now_color"> </font></form> 
+          </td><td align="middle"> 
+            <table align="center" border="0"> 
+              <tbody> 
+              <tr valign="center" align="middle"> 
+                <td nowrap="" bgcolor="#ffebcd"><input style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #000000 1px solid; COLOR: #444444; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #f6f6f6" onclick="Up_Down(&#39;w&#39;,&#39;down2&#39;)" type="submit" value="&lt;&lt;"> 
+                </td> 
+                <td nowrap="" bgcolor="#ffebcd"><input style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #000000 1px solid; COLOR: #444444; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #f6f6f6" onclick="Up_Down(&#39;w&#39;,&#39;down1&#39;)" type="submit" value=" &lt; "> 
+                </td> 
+                <td nowrap="" bgcolor="#ffebcd"><font color="#f0ffff">全體</font></td> 
+                <td nowrap="" bgcolor="#ffebcd"><input style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #000000 1px solid; COLOR: #444444; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #f6f6f6" onclick="Up_Down(&#39;w&#39;,&#39;up1&#39;)" type="submit" value=" &gt; "> 
+                </td> 
+                <td nowrap="" bgcolor="#ffebcd"><input style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #000000 1px solid; COLOR: #444444; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #f6f6f6" onclick="Up_Down(&#39;w&#39;,&#39;up2&#39;)" type="submit" value="&gt;&gt;"> 
+                </td></tr> 
+              <tr valign="center" align="middle"> 
+                <td nowrap="" bgcolor="#ffebcd"><input style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #000000 1px solid; COLOR: #444444; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #f6f6f6" onclick="Up_Down(&#39;r&#39;,&#39;down2&#39;)" type="submit" value="&lt;&lt;"> 
+                </td> 
+                <td nowrap="" bgcolor="#ffebcd"><input style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #000000 1px solid; COLOR: #444444; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #f6f6f6" onclick="Up_Down(&#39;r&#39;,&#39;down1&#39;)" type="submit" value=" &lt; "> 
+                </td> 
+                <td nowrap="" bgcolor="#ffebcd"><font color="#ff0000">紅</font></td> 
+                <td nowrap="" bgcolor="#ffebcd"><input style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #000000 1px solid; COLOR: #444444; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #f6f6f6" onclick="Up_Down(&#39;r&#39;,&#39;up1&#39;)" type="submit" value=" &gt; "> 
+                </td> 
+                <td nowrap="" bgcolor="#ffebcd"><input style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #000000 1px solid; COLOR: #444444; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #f6f6f6" onclick="Up_Down(&#39;r&#39;,&#39;up2&#39;)" type="submit" value="&gt;&gt;"> 
+                </td></tr> 
+              <tr valign="center" align="middle"> 
+                <td nowrap="" bgcolor="#ffebcd"><input style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #000000 1px solid; COLOR: #444444; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #f6f6f6" onclick="Up_Down(&#39;g&#39;,&#39;down2&#39;)" type="submit" value="&lt;&lt;"> 
+                </td> 
+                <td nowrap="" bgcolor="#ffebcd"><input style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #000000 1px solid; COLOR: #444444; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #f6f6f6" onclick="Up_Down(&#39;g&#39;,&#39;down1&#39;)" type="submit" value=" &lt; "> 
+                </td> 
+                <td nowrap="" bgcolor="#ffebcd"><font color="#00ff00">綠</font></td> 
+                <td nowrap="" bgcolor="#ffebcd"><input style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #000000 1px solid; COLOR: #444444; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #f6f6f6" onclick="Up_Down(&#39;g&#39;,&#39;up1&#39;)" type="submit" value=" &gt; "> 
+                </td> 
+                <td nowrap="" bgcolor="#ffebcd"><input style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #000000 1px solid; COLOR: #444444; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #f6f6f6" onclick="Up_Down(&#39;g&#39;,&#39;up2&#39;)" type="submit" value="&gt;&gt;"> 
+                </td></tr> 
+              <tr valign="center" align="middle"> 
+                <td nowrap="" bgcolor="#ffebcd"><input style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #000000 1px solid; COLOR: #444444; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #f6f6f6" onclick="Up_Down(&#39;b&#39;,&#39;down2&#39;)" type="submit" value="&lt;&lt;"> 
+                </td> 
+                <td nowrap="" bgcolor="#ffebcd"><input style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #000000 1px solid; COLOR: #444444; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #f6f6f6" onclick="Up_Down(&#39;b&#39;,&#39;down1&#39;)" type="submit" value=" &lt; "> 
+                </td> 
+                <td nowrap="" bgcolor="#ffebcd"><font color="#0000ff">青</font></td> 
+                <td nowrap="" bgcolor="#ffebcd"><input style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #000000 1px solid; COLOR: #444444; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #f6f6f6" onclick="Up_Down(&#39;b&#39;,&#39;up1&#39;)" type="submit" value=" &gt; "> 
+                </td> 
+                <td nowrap="" bgcolor="#ffebcd"><input style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #000000 1px solid; COLOR: #444444; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #f6f6f6" onclick="Up_Down(&#39;b&#39;,&#39;up2&#39;)" type="submit" value="&gt;&gt;"> 
+                </td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><br> 
+<table align="center" bgcolor="#434b7e" border="1"> 
+  <tbody> 
+  <tr bgcolor="#000000"> 
+    <td width="20%"><input onclick="Change_Color(this.value)" type="radio" value="#f0f8ff" name="main_color"> <font color="aliceblue">aliceblue</font></td> 
+    <td width="20%"><input onclick="Change_Color(this.value)" type="radio" value="#faebd7" name="main_color"> <font color="antiquewhite">antiquewhite</font></td> 
+    <td width="20%"><input onclick="Change_Color(this.value)" type="radio" value="#00ffff" name="main_color"> <font color="aqua">aqua</font> </td> 
+    <td width="20%"><input onclick="Change_Color(this.value)" type="radio" value="#7fffd4" name="main_color"> <font color="aquamarine">aquamarine</font> 
+</td> 
+    <td width="20%"><input onclick="Change_Color(this.value)" type="radio" value="#f0ffff" name="main_color"> <font color="azure">azure</font> </td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#f5f5dc" name="main_color"> <font color="beige">beige</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ffe4c4" name="main_color"> <font color="bisque">bisque</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#000000" name="main_color"> <font color="#ffffff">black</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ffebcd" name="main_color"> <font color="blanchedalmond">blanchedalmond</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#0000ff" name="main_color"> <font color="blue">blue</font> </td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#8a2be2" name="main_color"> <font color="blueviolet">blueviolet</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#a52a2a" name="main_color"> <font color="brown">brown</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#deb887" name="main_color"> <font color="burlywood">burlywood</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#5f9ea0" name="main_color"> <font color="cadetblue">cadetblue</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#7fff00" name="main_color"> <font color="chartreuse">chartreuse</font> </td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#d2691e" name="main_color"> <font color="chocolate">chocolate</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ff7f50" name="main_color"> <font color="coral">coral</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#6495ed" name="main_color"> <font color="cornflowerblue">cornflowerblue</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#fff8dc" name="main_color"> <font color="cornsilk">cornsilk</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#dc143c" name="main_color"> <font color="crimson">crimson</font> </td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#00ffff" name="main_color"> <font color="cyan">cyan</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#00008b" name="main_color"> <font color="darkblue">darkblue</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#008b8b" name="main_color"> <font color="darkcyan">darkcyan</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#b8860b" name="main_color"> <font color="darkgoldenrod">darkgoldenrod</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#a9a9a9" name="main_color"> <font color="darkgray">darkgray</font> </td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#006400" name="main_color"> <font color="darkgreen">darkgreen</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#bdb76b" name="main_color"> <font color="darkkhaki">darkkhaki</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#8b008b" name="main_color"> <font color="darkmagenta">darkmagenta</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#556b2f" name="main_color"> <font color="darkolivegreen">darkolivegreen</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ff8c00" name="main_color"> <font color="darkorange">darkorange</font> </td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#9932cc" name="main_color"> <font color="darkorchid">darkorchid</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#8b0000" name="main_color"> <font color="darkred">darkred</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#e9967a" name="main_color"> <font color="darksalmon">darksalmon</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#8fbc8f" name="main_color"> <font color="darkseagreen">darkseagreen</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#483d8b" name="main_color"> <font color="darkslateblue">darkslateblue</font> </td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#2f4f4f" name="main_color"> <font color="darkslategray">darkslategray</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#00ced1" name="main_color"> <font color="darkturquoise">darkturquoise</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#9400d3" name="main_color"> <font color="darkviolet">darkviolet</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ff1493" name="main_color"> <font color="deeppink">deeppink</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#00bfff" name="main_color"> <font color="deepskyblue">deepskyblue</font> </td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#696969" name="main_color"> <font color="dimgray">dimgray</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#1e90ff" name="main_color"> <font color="dodgerblue">dodgerblue</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#b22222" name="main_color"> <font color="firebrick">firebrick</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#fffaf0" name="main_color"> <font color="floralwhite">floralwhite</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#228b22" name="main_color"> <font color="forestgreen">forestgreen</font> </td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ff00ff" name="main_color"> <font color="fuchsia">fuchsia</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#dcdcdc" name="main_color"> <font color="gainsboro">gainsboro</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#f8f8ff" name="main_color"> <font color="ghostwhite">ghostwhite</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ffd700" name="main_color"> <font color="gold">gold</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#daa520" name="main_color"> <font color="goldenrod">goldenrod</font> </td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#808080" name="main_color"> <font color="gray">gray</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#008000" name="main_color"> <font color="green">green</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#adff2f" name="main_color"> <font color="greenyellow">greenyellow</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#f0fff0" name="main_color"> <font color="honeydew">honeydew</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ff69b4" name="main_color"> <font color="hotpink">hotpink</font> </td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#cd5c5c" name="main_color"> <font color="indianred">indianred</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#4b0082" name="main_color"> <font color="indigo">indigo</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#fffff0" name="main_color"> <font color="ivory">ivory</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#f0e68c" name="main_color"> <font color="khaki">khaki</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#e6e6fa" name="main_color"> <font color="lavender">lavender</font> </td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#fff0f5" name="main_color"> <font color="lavenderblush">lavenderblush</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#7cfc00" name="main_color"> <font color="lawngreen">lawngreen</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#fffacd" name="main_color"> <font color="lemonchiffon">lemonchiffon</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#add8e6" name="main_color"> <font color="lightblue">lightblue</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#f08080" name="main_color"> <font color="lightcoral">lightcoral</font> </td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#e0ffff" name="main_color"> <font color="lightcyan">lightcyan</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#fafad2" name="main_color"> <font color="lightgoldenrodyellow">lightgolden<br>rodyellow</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#90ee90" name="main_color"> <font color="lightgreen">lightgreen</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#d3d3d3" name="main_color"> <font color="lightgrey">lightgrey</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ffb6c1" name="main_color"> <font color="lightpink">lightpink</font> </td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ffa07a" name="main_color"> <font color="lightsalmon">lightsalmon</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#20b2aa" name="main_color"> <font color="lightseagreen">lightseagreen</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#87cefa" name="main_color"> <font color="lightskyblue">lightskyblue</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#778899" name="main_color"> <font color="lightslategray">lightslategray</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#b0c4de" name="main_color"> <font color="lightsteelblue">lightsteelblue</font></td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ffffe0" name="main_color"> <font color="lightyellow">lightyellow</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#00ff00" name="main_color"> <font color="lime">lime</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#32cd32" name="main_color"> <font color="limegreen">limegreen</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#faf0e6" name="main_color"> <font color="linen">linen</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ff00ff" name="main_color"> <font color="magenta">magenta</font> </td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#800000" name="main_color"> <font color="maroon">maroon</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#66cdaa" name="main_color"> <font color="mediumaquamarine">mediumaquamarine</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#0000cd" name="main_color"> <font color="mediumblue">mediumblue</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ba55d3" name="main_color"> <font color="mediumorchid">mediumorchid</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#9370db" name="main_color"> <font color="mediumpurple">mediumpurple</font> </td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#3cb371" name="main_color"> <font color="mediumseagreen">mediumseagreen</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#7b68ee" name="main_color"> <font color="mediumslateblue">mediumslateblue</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#00fa9a" name="main_color"> <font color="mediumspringgreen">mediumspringgreen</font> 
+</td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#48d1cc" name="main_color"> <font color="mediumturquoise">mediumturquoise</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#c71585" name="main_color"> <font color="mediumvioletred">mediumvioletred</font> </td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#191970" name="main_color"> <font color="midnightblue">midnightblue</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#f5fffa" name="main_color"> <font color="mintcream">mintcream</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ffe4e1" name="main_color"> <font color="mistyrose">mistyrose</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ffe4b5" name="main_color"> <font color="moccasin">moccasin</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ffdead" name="main_color"> <font color="navajowhite">navajowhite</font> </td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#000080" name="main_color"> <font color="navy">navy</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#fdf5e6" name="main_color"> <font color="oldlace">oldlace</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#808000" name="main_color"> <font color="olive">olive</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#6b8e23" name="main_color"> <font color="olivedrab">olivedrab</font> </td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ffa500" name="main_color"> <font color="orange">orange</font> </td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ff4500" name="main_color"> <font color="orangered">orangered</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#da70d6" name="main_color"> <font color="orchid">orchid</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#eee8aa" name="main_color"> <font color="palegoldenrod">palegoldenrod</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#98fb98" name="main_color"> <font color="palegreen">palegreen</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#afeeee" name="main_color"> <font color="paleturquoise">paleturquoise</font></td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#db7093" name="main_color"> <font color="palevioletred">palevioletred</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ffefd5" name="main_color"> <font color="papayawhip">papayawhip</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ffdab9" name="main_color"> <font color="peachpuff">peachpuff</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#cd853f" name="main_color"> <font color="peru">peru</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ffc0cb" name="main_color"> <font color="pink">pink</font></td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#dda0dd" name="main_color"> <font color="plum">plum</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#b0e0e6" name="main_color"> <font color="powderblue">powderblue</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#800080" name="main_color"> <font color="purple">purple</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ff0000" name="main_color"> <font color="red">red</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#bc8f8f" name="main_color"> <font color="rosybrown">rosybrown</font></td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#4169e1" name="main_color"> <font color="royalblue">royalblue</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#8b4513" name="main_color"> <font color="saddlebrown">saddlebrown</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#fa8072" name="main_color"> <font color="salmon">salmon</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#f4a460" name="main_color"> <font color="sandybrown">sandybrown</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#2e8b57" name="main_color"> <font color="seagreen">seagreen</font></td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#fff5ee" name="main_color"> <font color="seashell">seashell</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#a0522d" name="main_color"> <font color="sienna">sienna</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#c0c0c0" name="main_color"> <font color="silver">silver</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#87ceeb" name="main_color"> <font color="skyblue">skyblue</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#6a5acd" name="main_color"> <font color="slateblue">slateblue</font></td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#708090" name="main_color"> <font color="slategray">slategray</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#fffafa" name="main_color"> <font color="snow">snow</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#00ff7f" name="main_color"> <font color="springgreen">springgreen</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#4682b4" name="main_color"> <font color="steelblue">steelblue</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#d2b48c" name="main_color"> <font color="tan">tan</font></td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#008080" name="main_color"> <font color="teal">teal</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#d8bfd8" name="main_color"> <font color="thistle">thistle</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ff6347" name="main_color"> <font color="tomato">tomato</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#40e0d0" name="main_color"> <font color="turquoise">turquoise</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ee82ee" name="main_color"> <font color="violet">violet</font></td></tr> 
+  <tr bgcolor="#000000"> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#f5deb3" name="main_color"> <font color="wheat">wheat</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ffffff" name="main_color"> <font color="white">white</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#f5f5f5" name="main_color"> <font color="whitesmoke">whitesmoke</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#ffff00" name="main_color"> <font color="yellow">yellow</font></td> 
+    <td><input onclick="Change_Color(this.value)" type="radio" value="#9acd32" name="main_color"> <font color="yellowgreen">yellowgreen</font></td></tr></tbody></table><center><font size=5 color="#9900ff">
+<marquee direction="up" behavior="slide">
+<div style="text-align: center;"><script src="http://ts.joch.gq/cf.php?username=leo93114"></script><br />
+聯絡我們<br /><a href="mailto:jochgvofd@gmail.com"> <img src="image/taddyshen.png" /><br /><a href="https://line.me/ti/p/%40trr7250q"><img height="36" border="0" alt="好友人數" src="http://biz.line.naver.jp/line_business/img/btn/addfriends_zh-Hant.png"></a><br /><a href="https://www.facebook.com/jochgvofdweb">Facebook粉絲團<a><br />
+© 2012-2016 <a href="http://jochgvofd.com/" target="_blank">次是慶宇工作室</a> - © 2012-2016 <a href="http://wartw.com.tw/" target="_blank">風雨人多元工作室</a>合作</div>
+</font>
+</marquee></font> </body></html></span>

@@ -1,0 +1,38 @@
+*:link, *:visited, *:hover, *:active, *:focus , * {
+-o-transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+-webkit-transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+-moz-transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+}
+a:link {color:#9900ff;}
+a:visited {color:#9900ff;}
+a:hover {color:#ff0099;}
+::selection {
+background: #9900ff;
+color: #fff;
+}
+::-moz-selection {
+background: #9900ff;
+color: #fff;
+}
+.myButton {
+	background-color:#b76fff;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #9900ff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial, Tahoma, Helvetica, FreeSans, Microsoft JhengHei, Heiti TC, TW-Kai, sans-serif;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#ff80d0;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}

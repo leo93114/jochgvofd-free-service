@@ -1,0 +1,496 @@
+ ﻿<span style="font-family:Arial, Tahoma, Helvetica, FreeSans, Microsoft JhengHei, Heiti TC, TW-Kai, sans-serif;">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document"><title>次是慶宇網頁色碼選擇器</title>
+<style>
+*:link, *:visited, *:hover, *:active, *:focus , * {
+-o-transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+-webkit-transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+-moz-transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+transition: color .20s linear, background-color .20s linear, border-color .20s linear;
+}
+a:link {color:#9900ff;}
+a:visited {color:#9900ff;}
+a:hover {color:#ff0099;}
+::selection {
+background: #9900ff;
+color: #fff;
+}
+::-moz-selection {
+background: #9900ff;
+color: #fff;
+}
+img::selection {
+background: transparent;
+}
+img::-moz-selection {
+background: transparent;
+}
+#Img3{
+    opacity: 1.0; //設為完全不透明
+    filter: alpha(opacity=100); // IE8 與更早的版本
+}
+#Img3:hover{
+    opacity: 0.5; //透明度設為 0.5
+    filter: alpha(opacity=50); // IE8 與更早的版本
+}
+.myButton {
+	background-color:#b76fff;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:1px solid #9900ff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial, Tahoma, Helvetica, FreeSans, Microsoft JhengHei, Heiti TC, TW-Kai, sans-serif;
+	font-size:18px;
+	padding:3px 11px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#ff80d0;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+</style>
+</head>
+<body bgcolor="#000000" link="#8FC3FE" text="#ffffff" vlink="#8FC3FE" alink="#00FFFF">
+
+<center>
+<table bordercolor="#000000" cellpadding="30"><tbody><tr><td bgcolor="#000000">
+<script language="Javascript"> 
+<!--
+
+p=0;
+d=50;
+l=50;
+xxp=0;
+xxd=0;
+xxl=0;
+fp=0;
+fd=0;
+fl=0;
+mp= Array();
+md= Array();
+ml= Array();
+lp= Array();
+ld= Array();
+ll= Array();
+op= Array();
+od= Array();
+ol= Array();
+kp= Array();
+kd= Array();
+kl= Array();
+kkp= Array();
+kkd= Array();
+kkl= Array();
+kkkp= Array();
+kkkd= Array();
+kkkl= Array();
+kkkkp= Array();
+kkkkd= Array();
+kkkkl= Array();
+kkkkkkp= Array();
+kkkkkkd= Array();
+kkkkkkl= Array();
+kkkkkkkp= Array();
+kkkkkkkd= Array();
+kkkkkkkl= Array();
+
+function ch(d,dp,lt){
+
+bc=0;
+bm=0;
+by=0;
+
+if(d>=0 && d<60){bc=100;
+                   bm=(d-0)/60*100;
+                   by=0;
+                }
+   
+if(d>=60 && d<120){ bc=(120-d)/60*100; 
+                     bm=100;
+                     by=0;
+                }
+    
+if(d>=120 && d<180){ by=(d-120)/60*100; 
+                     bm=100;
+                     bc=0;
+                }
+    
+if(d>=180 && d<240){bc=0;
+                   bm=(240-d)/60*100;
+                 by=100;
+                }
+
+   
+if(d>=240 && d<300){bc=(d-240)/60*100; 
+                    bm=0;
+                 by=100;
+                }
+
+    
+
+if(d>=300 && d<=360){bc=100;
+                bm=0;
+                  by=(360-d)/60*100;
+                }
+      
+bc=100-dp*bc/100.00-lt;
+bm=100-dp*bm/100.00-lt;
+by=100-dp*by/100.00-lt;
+if(bc<=0){bc=0;}
+if(bm<=0){bm=0;}
+if(by<=0){by=0;}
+if(bc>=100){bc=100;}
+if(bm>=100){bm=100;}
+if(by>=100){by=100;}
+
+bc=Math.round(bc*2.55);
+bm=Math.round(bm*2.55);
+by=Math.round(by*2.55);
+pc16=bc.toString(16);
+pm16=bm.toString(16);
+py16=by.toString(16);
+c16=pc16;
+m16=pm16;
+y16=py16;
+if(bc<=15){c16="0"+pc16;}
+if(bm<=15){m16="0"+pm16;}
+if(by<=15){y16="0"+py16;}
+col="#"+c16+m16+y16;
+if(dp+lt>100){col="#dddddd";}
+return col;
+}
+
+function aset(idn,ap,ad,al){
+mp[idn]=ap;
+md[idn]=ad;
+ml[idn]=al;
+               }
+function bset(idn,ap,ad,al){
+lp[idn]=ap;
+ld[idn]=ad;
+ll[idn]=al;
+               }
+function cset(idn,ap,ad,al){
+op[idn]=ap;
+od[idn]=ad;
+ol[idn]=al;
+               }
+function dset(idn,ap,ad,al){
+kp[idn]=ap;
+kd[idn]=ad;
+kl[idn]=al;
+               }
+
+function eset(idn,ap,ad,al){
+kkp[idn]=ap;
+kkd[idn]=ad;
+kkl[idn]=al;
+               }
+
+function fset(idn,ap,ad,al){
+kkkp[idn]=ap;
+kkkd[idn]=ad;
+kkkl[idn]=al;
+               }
+
+function gset(idn,ap,ad,al){
+kkkkp[idn]=ap;
+kkkkd[idn]=ad;
+kkkkl[idn]=al;
+               }
+
+
+function bgset(l,cc){
+if(l==1){k1.style.background=cc;}if(l==2){k2.style.background=cc;}if(l==3){k3.style.background=cc;}if(l==4){k4.style.background=cc;}if(l==5){k5.style.background=cc;}if(l==6){k6.style.background=cc;}if(l==7){k7.style.background=cc;}if(l==8){k8.style.background=cc;}if(l==9){k9.style.background=cc;}if(l==10){k10.style.background=cc;}if(l==11){k11.style.background=cc;}if(l==12){k12.style.background=cc;}if(l==13){k13.style.background=cc;}if(l==14){k14.style.background=cc;}if(l==15){k15.style.background=cc;}if(l==16){k16.style.background=cc;}if(l==17){k17.style.background=cc;}if(l==18){k18.style.background=cc;}if(l==19){k19.style.background=cc;}if(l==20){k20.style.background=cc;}if(l==21){k21.style.background=cc;}if(l==22){k22.style.background=cc;}if(l==23){k23.style.background=cc;}if(l==24){k24.style.background=cc;}if(l==25){k25.style.background=cc;}if(l==26){k26.style.background=cc;}if(l==27){k27.style.background=cc;}if(l==28){k28.style.background=cc;}if(l==29){k29.style.background=cc;}if(l==30){k30.style.background=cc;}if(l==31){k31.style.background=cc;}if(l==32){k32.style.background=cc;}if(l==33){k33.style.background=cc;}if(l==34){k34.style.background=cc;}if(l==35){k35.style.background=cc;}if(l==36){k36.style.background=cc;}
+
+}
+
+function bgset2(l,cc){
+
+
+if(l==1){kk1.style.background=cc;}if(l==2){kk2.style.background=cc;}if(l==3){kk3.style.background=cc;}if(l==4){kk4.style.background=cc;}if(l==5){kk5.style.background=cc;}if(l==6){kk6.style.background=cc;}if(l==7){kk7.style.background=cc;}if(l==8){kk8.style.background=cc;}if(l==9){kk9.style.background=cc;}if(l==10){kk10.style.background=cc;}if(l==11){kk11.style.background=cc;}if(l==12){kk12.style.background=cc;}if(l==13){kk13.style.background=cc;}if(l==14){kk14.style.background=cc;}if(l==15){kk15.style.background=cc;}if(l==16){kk16.style.background=cc;}if(l==17){kk17.style.background=cc;}if(l==18){kk18.style.background=cc;}if(l==19){kk19.style.background=cc;}if(l==20){kk20.style.background=cc;}if(l==21){kk21.style.background=cc;}if(l==22){kk22.style.background=cc;}if(l==23){kk23.style.background=cc;}if(l==24){kk24.style.background=cc;}if(l==25){kk25.style.background=cc;}if(l==26){kk26.style.background=cc;}if(l==27){kk27.style.background=cc;}if(l==28){kk28.style.background=cc;}if(l==29){kk29.style.background=cc;}if(l==30){kk30.style.background=cc;}if(l==31){kk31.style.background=cc;}if(l==32){kk32.style.background=cc;}if(l==33){kk33.style.background=cc;}if(l==34){kk34.style.background=cc;}if(l==35){kk35.style.background=cc;}if(l==36){kk36.style.background=cc;}
+
+
+}
+
+function bgset3(l,cc){
+
+if(l==1){kkk1.style.background=cc;}if(l==2){kkk2.style.background=cc;}if(l==3){kkk3.style.background=cc;}if(l==4){kkk4.style.background=cc;}if(l==5){kkk5.style.background=cc;}if(l==6){kkk6.style.background=cc;}if(l==7){kkk7.style.background=cc;}if(l==8){kkk8.style.background=cc;}if(l==9){kkk9.style.background=cc;}if(l==10){kkk10.style.background=cc;}if(l==11){kkk11.style.background=cc;}if(l==12){kkk12.style.background=cc;}if(l==13){kkk13.style.background=cc;}if(l==14){kkk14.style.background=cc;}if(l==15){kkk15.style.background=cc;}if(l==16){kkk16.style.background=cc;}if(l==17){kkk17.style.background=cc;}if(l==18){kkk18.style.background=cc;}if(l==19){kkk19.style.background=cc;}if(l==20){kkk20.style.background=cc;}if(l==21){kkk21.style.background=cc;}if(l==22){kkk22.style.background=cc;}if(l==23){kkk23.style.background=cc;}if(l==24){kkk24.style.background=cc;}if(l==25){kkk25.style.background=cc;}if(l==26){kkk26.style.background=cc;}if(l==27){kkk27.style.background=cc;}if(l==28){kkk28.style.background=cc;}if(l==29){kkk29.style.background=cc;}if(l==30){kkk30.style.background=cc;}if(l==31){kkk31.style.background=cc;}if(l==32){kkk32.style.background=cc;}if(l==33){kkk33.style.background=cc;}if(l==34){kkk34.style.background=cc;}if(l==35){kkk35.style.background=cc;}if(l==36){kkk36.style.background=cc;}
+
+
+}
+
+function bgset4(l,cc){
+
+if(l==1){kkkk1.style.background=cc;}if(l==2){kkkk2.style.background=cc;}if(l==3){kkkk3.style.background=cc;}if(l==4){kkkk4.style.background=cc;}if(l==5){kkkk5.style.background=cc;}if(l==6){kkkk6.style.background=cc;}if(l==7){kkkk7.style.background=cc;}if(l==8){kkkk8.style.background=cc;}if(l==9){kkkk9.style.background=cc;}if(l==10){kkkk10.style.background=cc;}if(l==11){kkkk11.style.background=cc;}if(l==12){kkkk12.style.background=cc;}if(l==13){kkkk13.style.background=cc;}if(l==14){kkkk14.style.background=cc;}if(l==15){kkkk15.style.background=cc;}if(l==16){kkkk16.style.background=cc;}if(l==17){kkkk17.style.background=cc;}if(l==18){kkkk18.style.background=cc;}if(l==19){kkkk19.style.background=cc;}if(l==20){kkkk20.style.background=cc;}if(l==21){kkkk21.style.background=cc;}if(l==22){kkkk22.style.background=cc;}if(l==23){kkkk23.style.background=cc;}if(l==24){kkkk24.style.background=cc;}if(l==25){kkkk25.style.background=cc;}if(l==26){kkkk26.style.background=cc;}if(l==27){kkkk27.style.background=cc;}if(l==28){kkkk28.style.background=cc;}if(l==29){kkkk29.style.background=cc;}if(l==30){kkkk30.style.background=cc;}if(l==31){kkkk31.style.background=cc;}if(l==32){kkkk32.style.background=cc;}if(l==33){kkkk33.style.background=cc;}if(l==34){kkkk34.style.background=cc;}if(l==35){kkkk35.style.background=cc;}if(l==36){kkkk36.style.background=cc;}
+
+
+
+}
+
+
+
+
+
+function fiset(tp,td,tl){
+
+ds=td-10;
+de=td+10;
+dd=4;
+ls=tl-20;
+le=tl+20;
+ld=8;
+
+lf=0;
+for(i=ls;i<=le;i=i+ld){
+
+for(j=ds;j<=de;j=j+dd){
+ccf=ch(tp,j,i);
+lf++;
+bgset(lf,ccf);
+ dset(lf,tp,j,i);
+                        }
+
+                       }
+
+                         }
+
+
+function fiset2(tp,td,tl){
+
+ds=td-10;
+de=td+10;
+dd=4;
+ls=tl-20;
+le=tl+20;
+ld=8;
+
+lf=0;
+for(i=ls;i<=le;i=i+ld){
+
+for(j=ds;j<=de;j=j+dd){
+ccf=ch(tp+10,j,i);
+lf++;
+bgset2(lf,ccf);
+ eset(lf,tp+10,j,i);
+                        }
+
+                       }
+
+                         }
+
+function fiset3(tp,td,tl){
+
+ds=td-10;
+de=td+10;
+dd=4;
+ls=tl-20;
+le=tl+20;
+ld=8;
+
+lf=0;
+for(i=ls;i<=le;i=i+ld){
+
+for(j=ds;j<=de;j=j+dd){
+ccf=ch(tp+20,j,i);
+lf++;
+bgset3(lf,ccf);
+ fset(lf,tp+20,j,i);
+                        }
+
+                       }
+
+                         }
+
+function fiset4(tp,td,tl){
+
+ds=td-10;
+de=td+10;
+dd=4;
+ls=tl-20;
+le=tl+20;
+ld=8;
+
+lf=0;
+for(i=ls;i<=le;i=i+ld){
+
+for(j=ds;j<=de;j=j+dd){
+ccf=ch(tp+30,j,i);
+lf++;
+bgset4(lf,ccf);
+ gset(lf,tp+30,j,i);
+                        }
+
+                       }
+
+                         }
+
+
+
+
+
+
+
+
+
+
+function pset(ap,ad,al){
+pcset(ap,ad,al)
+
+}
+
+function pcset(pf,df,lf){
+
+fiset(pf,df,lf);
+fiset2(pf,df,lf);
+fiset3(pf,df,lf);
+fiset4(pf,df,lf);
+
+p=pf;
+d=df;
+l=lf;
+fp=pf;
+fd=df;
+fl=lf;
+rc=ch(p,d,l);
+//document.bgColor=rc;
+csc.style.background=rc;
+document.o.c.value=rc;
+}
+
+function ppcset(pf,df,lf){
+p=pf;
+d=df;
+l=lf;
+
+fp=pf;
+fd=df;
+fl=lf;
+rc=ch(p,d,l);
+//document.bgColor=rc;
+csc.style.background=rc;
+document.o.c.value=rc;
+}
+function tb1cs(){
+tb1co=document.o.c.value;
+tb1.style.background=tb1co;
+document.o.tb1c.value=tb1co;
+                }
+
+function f1cs(){
+tb1co=document.o.c.value;
+f1.style.color=tb1co;
+document.o.f1c.value=tb1co;
+                }
+function f2cs(){
+tb1co=document.o.c.value;
+f2.style.color=tb1co;
+document.o.f2c.value=tb1co;
+                }
+function f3cs(){
+tb1co=document.o.c.value;
+f3.style.color=tb1co;
+document.o.f3c.value=tb1co;
+                }
+function f4cs(){
+tb1co=document.o.c.value;
+f4.style.color=tb1co;
+document.o.f4c.value=tb1co;
+                }
+function f5cs(){
+tb1co=document.o.c.value;
+f5.style.color=tb1co;
+document.o.f5c.value=tb1co;
+                }
+
+
+//-->
+</script>
+
+
+
+<script language="Javascript">
+<!--
+
+
+var nav = navigator.appName;
+if(nav.charAt(0) == "N") {document.write("<CENTER><font color=yellow size=3></font></CENTER>");}
+//-->
+</script><center><font size="20" color="#9900ff"><b>次是慶宇</font><font size="20" color="#006600">網</font><font size="20" color="#0066cc">頁</font><font size="20" color="#9900ff">色</font><font size="20" color="#ff66cc">碼</font><font size="20" color="#cc0000">選</font><font size="20" color="#ff3300">擇<font size="20" color="#cc6666">器</b></font><b><font color="#8FC3FE" size="20"></font></b></center><center><br><font size="2">
+<a class="myButton" href="http://joch.gq/free">更多免費服務</a> 
+<a class="myButton" href="index.html">色碼表</a> 
+<a class="myButton" href="colorcord2.html">背景色彩選擇器</a> 
+<a class="myButton" href="colorcord1.html">色碼選擇器</a> 
+<a class="myButton" href="ColorTable.html">英文色碼表</a> 
+<a class="myButton" href="color-1.html">英文色碼選擇器</a>
+</font></center>   
+
+<form name="o">
+
+
+<table bgcolor="#dddddd"><tbody><tr><td id="n1" onclick="pcset(-30,25,0)" bgcolor="#ffffff" height="10" width="10"><font style="font-size: 10px;" color="#ffffff">*</font></td><td id="n2" onclick="pcset(0,25,0)" bgcolor="#bfffff" height="10" width="10"><font style="font-size: 10px;" color="#bfffff">*</font></td><td id="n3" onclick="pcset(30,25,0)" bgcolor="#bfdfff" height="10" width="10"><font style="font-size: 10px;" color="#bfdfff">*</font></td><td id="n4" onclick="pcset(60,25,0)" bgcolor="#bfbfff" height="10" width="10"><font style="font-size: 10px;" color="#bfbfff">*</font></td><td id="n5" onclick="pcset(90,25,0)" bgcolor="#dfbfff" height="10" width="10"><font style="font-size: 10px;" color="#dfbfff">*</font></td><td id="n6" onclick="pcset(120,25,0)" bgcolor="#ffbfff" height="10" width="10"><font style="font-size: 10px;" color="#ffbfff">*</font></td><td id="n7" onclick="pcset(150,25,0)" bgcolor="#ffbfdf" height="10" width="10"><font style="font-size: 10px;" color="#ffbfdf">*</font></td><td id="n8" onclick="pcset(180,25,0)" bgcolor="#ffbfbf" height="10" width="10"><font style="font-size: 10px;" color="#ffbfbf">*</font></td><td id="n9" onclick="pcset(210,25,0)" bgcolor="#ffdfbf" height="10" width="10"><font style="font-size: 10px;" color="#ffdfbf">*</font></td><td id="n10" onclick="pcset(240,25,0)" bgcolor="#ffffbf" height="10" width="10"><font style="font-size: 10px;" color="#ffffbf">*</font></td><td id="n11" onclick="pcset(270,25,0)" bgcolor="#dfffbf" height="10" width="10"><font style="font-size: 10px;" color="#dfffbf">*</font></td><td id="n12" onclick="pcset(300,25,0)" bgcolor="#bfffbf" height="10" width="10"><font style="font-size: 10px;" color="#bfffbf">*</font></td><td id="n13" onclick="pcset(330,25,0)" bgcolor="#bfffdf" height="10" width="10"><font style="font-size: 10px;" color="#bfffdf">*</font></td><td id="n14" onclick="pcset(-30,50,0)" bgcolor="#ffffff" height="10" width="10"><font style="font-size: 10px;" color="#ffffff">*</font></td><td id="n15" onclick="pcset(0,50,0)" bgcolor="#7fffff" height="10" width="10"><font style="font-size: 10px;" color="#7fffff">*</font></td><td id="n16" onclick="pcset(30,50,0)" bgcolor="#7fbfff" height="10" width="10"><font style="font-size: 10px;" color="#7fbfff">*</font></td><td id="n17" onclick="pcset(60,50,0)" bgcolor="#7f7fff" height="10" width="10"><font style="font-size: 10px;" color="#7f7fff">*</font></td><td id="n18" onclick="pcset(90,50,0)" bgcolor="#bf7fff" height="10" width="10"><font style="font-size: 10px;" color="#bf7fff">*</font></td><td id="n19" onclick="pcset(120,50,0)" bgcolor="#ff7fff" height="10" width="10"><font style="font-size: 10px;" color="#ff7fff">*</font></td><td id="n20" onclick="pcset(150,50,0)" bgcolor="#ff7fbf" height="10" width="10"><font style="font-size: 10px;" color="#ff7fbf">*</font></td><td id="n21" onclick="pcset(180,50,0)" bgcolor="#ff7f7f" height="10" width="10"><font style="font-size: 10px;" color="#ff7f7f">*</font></td><td id="n22" onclick="pcset(210,50,0)" bgcolor="#ffbf7f" height="10" width="10"><font style="font-size: 10px;" color="#ffbf7f">*</font></td><td id="n23" onclick="pcset(240,50,0)" bgcolor="#ffff7f" height="10" width="10"><font style="font-size: 10px;" color="#ffff7f">*</font></td><td id="n24" onclick="pcset(270,50,0)" bgcolor="#bfff7f" height="10" width="10"><font style="font-size: 10px;" color="#bfff7f">*</font></td><td id="n25" onclick="pcset(300,50,0)" bgcolor="#7fff7f" height="10" width="10"><font style="font-size: 10px;" color="#7fff7f">*</font></td><td id="n26" onclick="pcset(330,50,0)" bgcolor="#7fffbf" height="10" width="10"><font style="font-size: 10px;" color="#7fffbf">*</font></td><td id="n27" onclick="pcset(-30,75,0)" bgcolor="#ffffff" height="10" width="10"><font style="font-size: 10px;" color="#ffffff">*</font></td><td id="n28" onclick="pcset(0,75,0)" bgcolor="#40ffff" height="10" width="10"><font style="font-size: 10px;" color="#40ffff">*</font></td><td id="n29" onclick="pcset(30,75,0)" bgcolor="#409fff" height="10" width="10"><font style="font-size: 10px;" color="#409fff">*</font></td><td id="n30" onclick="pcset(60,75,0)" bgcolor="#4040ff" height="10" width="10"><font style="font-size: 10px;" color="#4040ff">*</font></td><td id="n31" onclick="pcset(90,75,0)" bgcolor="#9f40ff" height="10" width="10"><font style="font-size: 10px;" color="#9f40ff">*</font></td><td id="n32" onclick="pcset(120,75,0)" bgcolor="#ff40ff" height="10" width="10"><font style="font-size: 10px;" color="#ff40ff">*</font></td><td id="n33" onclick="pcset(150,75,0)" bgcolor="#ff409f" height="10" width="10"><font style="font-size: 10px;" color="#ff409f">*</font></td><td id="n34" onclick="pcset(180,75,0)" bgcolor="#ff4040" height="10" width="10"><font style="font-size: 10px;" color="#ff4040">*</font></td><td id="n35" onclick="pcset(210,75,0)" bgcolor="#ff9f40" height="10" width="10"><font style="font-size: 10px;" color="#ff9f40">*</font></td><td id="n36" onclick="pcset(240,75,0)" bgcolor="#ffff40" height="10" width="10"><font style="font-size: 10px;" color="#ffff40">*</font></td><td id="n37" onclick="pcset(270,75,0)" bgcolor="#9fff40" height="10" width="10"><font style="font-size: 10px;" color="#9fff40">*</font></td><td id="n38" onclick="pcset(300,75,0)" bgcolor="#40ff40" height="10" width="10"><font style="font-size: 10px;" color="#40ff40">*</font></td><td id="n39" onclick="pcset(330,75,0)" bgcolor="#40ff9f" height="10" width="10"><font style="font-size: 10px;" color="#40ff9f">*</font></td><td id="n40" onclick="pcset(-30,100,0)" bgcolor="#ffffff" height="10" width="10"><font style="font-size: 10px;" color="#ffffff">*</font></td><td id="n41" onclick="pcset(0,100,0)" bgcolor="#00ffff" height="10" width="10"><font style="font-size: 10px;" color="#00ffff">*</font></td><td id="n42" onclick="pcset(30,100,0)" bgcolor="#007fff" height="10" width="10"><font style="font-size: 10px;" color="#007fff">*</font></td><td id="n43" onclick="pcset(60,100,0)" bgcolor="#0000ff" height="10" width="10"><font style="font-size: 10px;" color="#0000ff">*</font></td><td id="n44" onclick="pcset(90,100,0)" bgcolor="#7f00ff" height="10" width="10"><font style="font-size: 10px;" color="#7f00ff">*</font></td><td id="n45" onclick="pcset(120,100,0)" bgcolor="#ff00ff" height="10" width="10"><font style="font-size: 10px;" color="#ff00ff">*</font></td><td id="n46" onclick="pcset(150,100,0)" bgcolor="#ff007f" height="10" width="10"><font style="font-size: 10px;" color="#ff007f">*</font></td><td id="n47" onclick="pcset(180,100,0)" bgcolor="#ff0000" height="10" width="10"><font style="font-size: 10px;" color="#ff0000">*</font></td><td id="n48" onclick="pcset(210,100,0)" bgcolor="#ff7f00" height="10" width="10"><font style="font-size: 10px;" color="#ff7f00">*</font></td><td id="n49" onclick="pcset(240,100,0)" bgcolor="#ffff00" height="10" width="10"><font style="font-size: 10px;" color="#ffff00">*</font></td><td id="n50" onclick="pcset(270,100,0)" bgcolor="#7fff00" height="10" width="10"><font style="font-size: 10px;" color="#7fff00">*</font></td><td id="n51" onclick="pcset(300,100,0)" bgcolor="#00ff00" height="10" width="10"><font style="font-size: 10px;" color="#00ff00">*</font></td><td id="n52" onclick="pcset(330,100,0)" bgcolor="#00ff7f" height="10" width="10"><font style="font-size: 10px;" color="#00ff7f">*</font></td></tr><tr><td id="n53" onclick="pcset(-30,25,25)" bgcolor="#bfbfbf" height="10" width="10"><font style="font-size: 10px;" color="#bfbfbf">*</font></td><td id="n54" onclick="pcset(0,25,25)" bgcolor="#7fbfbf" height="10" width="10"><font style="font-size: 10px;" color="#7fbfbf">*</font></td><td id="n55" onclick="pcset(30,25,25)" bgcolor="#7f9fbf" height="10" width="10"><font style="font-size: 10px;" color="#7f9fbf">*</font></td><td id="n56" onclick="pcset(60,25,25)" bgcolor="#7f7fbf" height="10" width="10"><font style="font-size: 10px;" color="#7f7fbf">*</font></td><td id="n57" onclick="pcset(90,25,25)" bgcolor="#9f7fbf" height="10" width="10"><font style="font-size: 10px;" color="#9f7fbf">*</font></td><td id="n58" onclick="pcset(120,25,25)" bgcolor="#bf7fbf" height="10" width="10"><font style="font-size: 10px;" color="#bf7fbf">*</font></td><td id="n59" onclick="pcset(150,25,25)" bgcolor="#bf7f9f" height="10" width="10"><font style="font-size: 10px;" color="#bf7f9f">*</font></td><td id="n60" onclick="pcset(180,25,25)" bgcolor="#bf7f7f" height="10" width="10"><font style="font-size: 10px;" color="#bf7f7f">*</font></td><td id="n61" onclick="pcset(210,25,25)" bgcolor="#bf9f7f" height="10" width="10"><font style="font-size: 10px;" color="#bf9f7f">*</font></td><td id="n62" onclick="pcset(240,25,25)" bgcolor="#bfbf7f" height="10" width="10"><font style="font-size: 10px;" color="#bfbf7f">*</font></td><td id="n63" onclick="pcset(270,25,25)" bgcolor="#9fbf7f" height="10" width="10"><font style="font-size: 10px;" color="#9fbf7f">*</font></td><td id="n64" onclick="pcset(300,25,25)" bgcolor="#7fbf7f" height="10" width="10"><font style="font-size: 10px;" color="#7fbf7f">*</font></td><td id="n65" onclick="pcset(330,25,25)" bgcolor="#7fbf9f" height="10" width="10"><font style="font-size: 10px;" color="#7fbf9f">*</font></td><td id="n66" onclick="pcset(-30,50,25)" bgcolor="#bfbfbf" height="10" width="10"><font style="font-size: 10px;" color="#bfbfbf">*</font></td><td id="n67" onclick="pcset(0,50,25)" bgcolor="#40bfbf" height="10" width="10"><font style="font-size: 10px;" color="#40bfbf">*</font></td><td id="n68" onclick="pcset(30,50,25)" bgcolor="#407fbf" height="10" width="10"><font style="font-size: 10px;" color="#407fbf">*</font></td><td id="n69" onclick="pcset(60,50,25)" bgcolor="#4040bf" height="10" width="10"><font style="font-size: 10px;" color="#4040bf">*</font></td><td id="n70" onclick="pcset(90,50,25)" bgcolor="#7f40bf" height="10" width="10"><font style="font-size: 10px;" color="#7f40bf">*</font></td><td id="n71" onclick="pcset(120,50,25)" bgcolor="#bf40bf" height="10" width="10"><font style="font-size: 10px;" color="#bf40bf">*</font></td><td id="n72" onclick="pcset(150,50,25)" bgcolor="#bf407f" height="10" width="10"><font style="font-size: 10px;" color="#bf407f">*</font></td><td id="n73" onclick="pcset(180,50,25)" bgcolor="#bf4040" height="10" width="10"><font style="font-size: 10px;" color="#bf4040">*</font></td><td id="n74" onclick="pcset(210,50,25)" bgcolor="#bf7f40" height="10" width="10"><font style="font-size: 10px;" color="#bf7f40">*</font></td><td id="n75" onclick="pcset(240,50,25)" bgcolor="#bfbf40" height="10" width="10"><font style="font-size: 10px;" color="#bfbf40">*</font></td><td id="n76" onclick="pcset(270,50,25)" bgcolor="#7fbf40" height="10" width="10"><font style="font-size: 10px;" color="#7fbf40">*</font></td><td id="n77" onclick="pcset(300,50,25)" bgcolor="#40bf40" height="10" width="10"><font style="font-size: 10px;" color="#40bf40">*</font></td><td id="n78" onclick="pcset(330,50,25)" bgcolor="#40bf7f" height="10" width="10"><font style="font-size: 10px;" color="#40bf7f">*</font></td><td id="n79" onclick="pcset(-30,75,25)" bgcolor="#bfbfbf" height="10" width="10"><font style="font-size: 10px;" color="#bfbfbf">*</font></td><td id="n80" onclick="pcset(0,75,25)" bgcolor="#00bfbf" height="10" width="10"><font style="font-size: 10px;" color="#00bfbf">*</font></td><td id="n81" onclick="pcset(30,75,25)" bgcolor="#0060bf" height="10" width="10"><font style="font-size: 10px;" color="#0060bf">*</font></td><td id="n82" onclick="pcset(60,75,25)" bgcolor="#0000bf" height="10" width="10"><font style="font-size: 10px;" color="#0000bf">*</font></td><td id="n83" onclick="pcset(90,75,25)" bgcolor="#6000bf" height="10" width="10"><font style="font-size: 10px;" color="#6000bf">*</font></td><td id="n84" onclick="pcset(120,75,25)" bgcolor="#bf00bf" height="10" width="10"><font style="font-size: 10px;" color="#bf00bf">*</font></td><td id="n85" onclick="pcset(150,75,25)" bgcolor="#bf0060" height="10" width="10"><font style="font-size: 10px;" color="#bf0060">*</font></td><td id="n86" onclick="pcset(180,75,25)" bgcolor="#bf0000" height="10" width="10"><font style="font-size: 10px;" color="#bf0000">*</font></td><td id="n87" onclick="pcset(210,75,25)" bgcolor="#bf6000" height="10" width="10"><font style="font-size: 10px;" color="#bf6000">*</font></td><td id="n88" onclick="pcset(240,75,25)" bgcolor="#bfbf00" height="10" width="10"><font style="font-size: 10px;" color="#bfbf00">*</font></td><td id="n89" onclick="pcset(270,75,25)" bgcolor="#60bf00" height="10" width="10"><font style="font-size: 10px;" color="#60bf00">*</font></td><td id="n90" onclick="pcset(300,75,25)" bgcolor="#00bf00" height="10" width="10"><font style="font-size: 10px;" color="#00bf00">*</font></td><td id="n91" onclick="pcset(330,75,25)" bgcolor="#00bf60" height="10" width="10"><font style="font-size: 10px;" color="#00bf60">*</font></td><td id="n92" onclick="pcset(-30,100,25)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n93" onclick="pcset(0,100,25)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n94" onclick="pcset(30,100,25)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n95" onclick="pcset(60,100,25)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n96" onclick="pcset(90,100,25)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n97" onclick="pcset(120,100,25)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n98" onclick="pcset(150,100,25)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n99" onclick="pcset(180,100,25)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n100" onclick="pcset(210,100,25)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n101" onclick="pcset(240,100,25)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n102" onclick="pcset(270,100,25)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n103" onclick="pcset(300,100,25)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n104" onclick="pcset(330,100,25)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td></tr><tr><td id="n105" onclick="pcset(-30,25,50)" bgcolor="#7f7f7f" height="10" width="10"><font style="font-size: 10px;" color="#7f7f7f">*</font></td><td id="n106" onclick="pcset(0,25,50)" bgcolor="#407f7f" height="10" width="10"><font style="font-size: 10px;" color="#407f7f">*</font></td><td id="n107" onclick="pcset(30,25,50)" bgcolor="#40607f" height="10" width="10"><font style="font-size: 10px;" color="#40607f">*</font></td><td id="n108" onclick="pcset(60,25,50)" bgcolor="#40407f" height="10" width="10"><font style="font-size: 10px;" color="#40407f">*</font></td><td id="n109" onclick="pcset(90,25,50)" bgcolor="#60407f" height="10" width="10"><font style="font-size: 10px;" color="#60407f">*</font></td><td id="n110" onclick="pcset(120,25,50)" bgcolor="#7f407f" height="10" width="10"><font style="font-size: 10px;" color="#7f407f">*</font></td><td id="n111" onclick="pcset(150,25,50)" bgcolor="#7f4060" height="10" width="10"><font style="font-size: 10px;" color="#7f4060">*</font></td><td id="n112" onclick="pcset(180,25,50)" bgcolor="#7f4040" height="10" width="10"><font style="font-size: 10px;" color="#7f4040">*</font></td><td id="n113" onclick="pcset(210,25,50)" bgcolor="#7f6040" height="10" width="10"><font style="font-size: 10px;" color="#7f6040">*</font></td><td id="n114" onclick="pcset(240,25,50)" bgcolor="#7f7f40" height="10" width="10"><font style="font-size: 10px;" color="#7f7f40">*</font></td><td id="n115" onclick="pcset(270,25,50)" bgcolor="#607f40" height="10" width="10"><font style="font-size: 10px;" color="#607f40">*</font></td><td id="n116" onclick="pcset(300,25,50)" bgcolor="#407f40" height="10" width="10"><font style="font-size: 10px;" color="#407f40">*</font></td><td id="n117" onclick="pcset(330,25,50)" bgcolor="#407f60" height="10" width="10"><font style="font-size: 10px;" color="#407f60">*</font></td><td id="n118" onclick="pcset(-30,50,50)" bgcolor="#7f7f7f" height="10" width="10"><font style="font-size: 10px;" color="#7f7f7f">*</font></td><td id="n119" onclick="pcset(0,50,50)" bgcolor="#007f7f" height="10" width="10"><font style="font-size: 10px;" color="#007f7f">*</font></td><td id="n120" onclick="pcset(30,50,50)" bgcolor="#00407f" height="10" width="10"><font style="font-size: 10px;" color="#00407f">*</font></td><td id="n121" onclick="pcset(60,50,50)" bgcolor="#00007f" height="10" width="10"><font style="font-size: 10px;" color="#00007f">*</font></td><td id="n122" onclick="pcset(90,50,50)" bgcolor="#40007f" height="10" width="10"><font style="font-size: 10px;" color="#40007f">*</font></td><td id="n123" onclick="pcset(120,50,50)" bgcolor="#7f007f" height="10" width="10"><font style="font-size: 10px;" color="#7f007f">*</font></td><td id="n124" onclick="pcset(150,50,50)" bgcolor="#7f0040" height="10" width="10"><font style="font-size: 10px;" color="#7f0040">*</font></td><td id="n125" onclick="pcset(180,50,50)" bgcolor="#7f0000" height="10" width="10"><font style="font-size: 10px;" color="#7f0000">*</font></td><td id="n126" onclick="pcset(210,50,50)" bgcolor="#7f4000" height="10" width="10"><font style="font-size: 10px;" color="#7f4000">*</font></td><td id="n127" onclick="pcset(240,50,50)" bgcolor="#7f7f00" height="10" width="10"><font style="font-size: 10px;" color="#7f7f00">*</font></td><td id="n128" onclick="pcset(270,50,50)" bgcolor="#407f00" height="10" width="10"><font style="font-size: 10px;" color="#407f00">*</font></td><td id="n129" onclick="pcset(300,50,50)" bgcolor="#007f00" height="10" width="10"><font style="font-size: 10px;" color="#007f00">*</font></td><td id="n130" onclick="pcset(330,50,50)" bgcolor="#007f40" height="10" width="10"><font style="font-size: 10px;" color="#007f40">*</font></td><td id="n131" onclick="pcset(-30,75,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n132" onclick="pcset(0,75,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n133" onclick="pcset(30,75,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n134" onclick="pcset(60,75,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n135" onclick="pcset(90,75,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n136" onclick="pcset(120,75,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n137" onclick="pcset(150,75,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n138" onclick="pcset(180,75,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n139" onclick="pcset(210,75,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n140" onclick="pcset(240,75,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n141" onclick="pcset(270,75,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n142" onclick="pcset(300,75,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n143" onclick="pcset(330,75,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n144" onclick="pcset(-30,100,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n145" onclick="pcset(0,100,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n146" onclick="pcset(30,100,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n147" onclick="pcset(60,100,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n148" onclick="pcset(90,100,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n149" onclick="pcset(120,100,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n150" onclick="pcset(150,100,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n151" onclick="pcset(180,100,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n152" onclick="pcset(210,100,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n153" onclick="pcset(240,100,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n154" onclick="pcset(270,100,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n155" onclick="pcset(300,100,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n156" onclick="pcset(330,100,50)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td></tr><tr><td id="n157" onclick="pcset(-30,25,75)" bgcolor="#404040" height="10" width="10"><font style="font-size: 10px;" color="#404040">*</font></td><td id="n158" onclick="pcset(0,25,75)" bgcolor="#004040" height="10" width="10"><font style="font-size: 10px;" color="#004040">*</font></td><td id="n159" onclick="pcset(30,25,75)" bgcolor="#002040" height="10" width="10"><font style="font-size: 10px;" color="#002040">*</font></td><td id="n160" onclick="pcset(60,25,75)" bgcolor="#000040" height="10" width="10"><font style="font-size: 10px;" color="#000040">*</font></td><td id="n161" onclick="pcset(90,25,75)" bgcolor="#200040" height="10" width="10"><font style="font-size: 10px;" color="#200040">*</font></td><td id="n162" onclick="pcset(120,25,75)" bgcolor="#400040" height="10" width="10"><font style="font-size: 10px;" color="#400040">*</font></td><td id="n163" onclick="pcset(150,25,75)" bgcolor="#400020" height="10" width="10"><font style="font-size: 10px;" color="#400020">*</font></td><td id="n164" onclick="pcset(180,25,75)" bgcolor="#400000" height="10" width="10"><font style="font-size: 10px;" color="#400000">*</font></td><td id="n165" onclick="pcset(210,25,75)" bgcolor="#402000" height="10" width="10"><font style="font-size: 10px;" color="#402000">*</font></td><td id="n166" onclick="pcset(240,25,75)" bgcolor="#404000" height="10" width="10"><font style="font-size: 10px;" color="#404000">*</font></td><td id="n167" onclick="pcset(270,25,75)" bgcolor="#204000" height="10" width="10"><font style="font-size: 10px;" color="#204000">*</font></td><td id="n168" onclick="pcset(300,25,75)" bgcolor="#004000" height="10" width="10"><font style="font-size: 10px;" color="#004000">*</font></td><td id="n169" onclick="pcset(330,25,75)" bgcolor="#004020" height="10" width="10"><font style="font-size: 10px;" color="#004020">*</font></td><td id="n170" onclick="pcset(-30,50,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n171" onclick="pcset(0,50,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n172" onclick="pcset(30,50,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n173" onclick="pcset(60,50,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n174" onclick="pcset(90,50,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n175" onclick="pcset(120,50,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n176" onclick="pcset(150,50,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n177" onclick="pcset(180,50,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n178" onclick="pcset(210,50,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n179" onclick="pcset(240,50,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n180" onclick="pcset(270,50,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n181" onclick="pcset(300,50,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n182" onclick="pcset(330,50,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n183" onclick="pcset(-30,75,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n184" onclick="pcset(0,75,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n185" onclick="pcset(30,75,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n186" onclick="pcset(60,75,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n187" onclick="pcset(90,75,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n188" onclick="pcset(120,75,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n189" onclick="pcset(150,75,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n190" onclick="pcset(180,75,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n191" onclick="pcset(210,75,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n192" onclick="pcset(240,75,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n193" onclick="pcset(270,75,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n194" onclick="pcset(300,75,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n195" onclick="pcset(330,75,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n196" onclick="pcset(-30,100,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n197" onclick="pcset(0,100,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n198" onclick="pcset(30,100,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n199" onclick="pcset(60,100,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n200" onclick="pcset(90,100,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n201" onclick="pcset(120,100,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n202" onclick="pcset(150,100,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n203" onclick="pcset(180,100,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n204" onclick="pcset(210,100,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n205" onclick="pcset(240,100,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n206" onclick="pcset(270,100,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n207" onclick="pcset(300,100,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td><td id="n208" onclick="pcset(330,100,75)" bgcolor="#000000" height="10" width="10"><font style="font-size: 10px;" color="#000000">*</font></td></tr></tbody></table>
+
+
+
+
+<table><tbody><tr><td>
+
+<table bgcolor="#dddddd" height="100" width="100"><tbody><tr><td style="background: rgb(140, 179, 140) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k1" onclick="ppcset(kp[1],kd[1],kl[1])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(130, 179, 130) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k2" onclick="ppcset(kp[2],kd[2],kl[2])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(120, 179, 120) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k3" onclick="ppcset(kp[3],kd[3],kl[3])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(110, 179, 110) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k4" onclick="ppcset(kp[4],kd[4],kl[4])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(99, 179, 99) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k5" onclick="ppcset(kp[5],kd[5],kl[5])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(89, 179, 89) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k6" onclick="ppcset(kp[6],kd[6],kl[6])" bgcolor="#dddddd" height="10"></td></tr><tr><td style="background: rgb(120, 158, 120) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k7" onclick="ppcset(kp[7],kd[7],kl[7])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(110, 158, 110) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k8" onclick="ppcset(kp[8],kd[8],kl[8])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(99, 158, 99) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k9" onclick="ppcset(kp[9],kd[9],kl[9])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(89, 158, 89) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k10" onclick="ppcset(kp[10],kd[10],kl[10])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(79, 158, 79) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k11" onclick="ppcset(kp[11],kd[11],kl[11])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(69, 158, 69) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k12" onclick="ppcset(kp[12],kd[12],kl[12])" bgcolor="#dddddd" height="10"></td></tr><tr><td style="background: rgb(99, 138, 99) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k13" onclick="ppcset(kp[13],kd[13],kl[13])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(89, 138, 89) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k14" onclick="ppcset(kp[14],kd[14],kl[14])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(79, 138, 79) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k15" onclick="ppcset(kp[15],kd[15],kl[15])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(69, 138, 69) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k16" onclick="ppcset(kp[16],kd[16],kl[16])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(59, 138, 59) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k17" onclick="ppcset(kp[17],kd[17],kl[17])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(48, 138, 48) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k18" onclick="ppcset(kp[18],kd[18],kl[18])" bgcolor="#dddddd" height="10"></td></tr><tr><td style="background: rgb(79, 117, 79) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k19" onclick="ppcset(kp[19],kd[19],kl[19])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(69, 117, 69) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k20" onclick="ppcset(kp[20],kd[20],kl[20])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(59, 117, 59) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k21" onclick="ppcset(kp[21],kd[21],kl[21])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(48, 117, 48) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k22" onclick="ppcset(kp[22],kd[22],kl[22])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(38, 117, 38) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k23" onclick="ppcset(kp[23],kd[23],kl[23])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(28, 117, 28) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k24" onclick="ppcset(kp[24],kd[24],kl[24])" bgcolor="#dddddd" height="10"></td></tr><tr><td style="background: rgb(59, 97, 59) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k25" onclick="ppcset(kp[25],kd[25],kl[25])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(48, 97, 48) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k26" onclick="ppcset(kp[26],kd[26],kl[26])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(38, 97, 38) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k27" onclick="ppcset(kp[27],kd[27],kl[27])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(28, 97, 28) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k28" onclick="ppcset(kp[28],kd[28],kl[28])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(18, 97, 18) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k29" onclick="ppcset(kp[29],kd[29],kl[29])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(8, 97, 8) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k30" onclick="ppcset(kp[30],kd[30],kl[30])" bgcolor="#dddddd" height="10"></td></tr><tr><td style="background: rgb(38, 77, 38) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k31" onclick="ppcset(kp[31],kd[31],kl[31])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(28, 77, 28) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k32" onclick="ppcset(kp[32],kd[32],kl[32])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(18, 77, 18) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k33" onclick="ppcset(kp[33],kd[33],kl[33])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(8, 77, 8) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k34" onclick="ppcset(kp[34],kd[34],kl[34])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(221, 221, 221) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k35" onclick="ppcset(kp[35],kd[35],kl[35])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(221, 221, 221) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="k36" onclick="ppcset(kp[36],kd[36],kl[36])" bgcolor="#dddddd" height="10"></td></tr></tbody></table>
+</td><td>
+<table bgcolor="#dddddd" height="100" width="100"><tbody><tr><td style="background: rgb(140, 179, 147) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk1" onclick="ppcset(kkp[1],kkd[1],kkl[1])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(130, 179, 138) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk2" onclick="ppcset(kkp[2],kkd[2],kkl[2])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(120, 179, 130) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk3" onclick="ppcset(kkp[3],kkd[3],kkl[3])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(110, 179, 121) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk4" onclick="ppcset(kkp[4],kkd[4],kkl[4])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(99, 179, 113) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk5" onclick="ppcset(kkp[5],kkd[5],kkl[5])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(89, 179, 104) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk6" onclick="ppcset(kkp[6],kkd[6],kkl[6])" bgcolor="#dddddd" height="10"></td></tr><tr><td style="background: rgb(120, 158, 126) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk7" onclick="ppcset(kkp[7],kkd[7],kkl[7])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(110, 158, 118) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk8" onclick="ppcset(kkp[8],kkd[8],kkl[8])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(99, 158, 109) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk9" onclick="ppcset(kkp[9],kkd[9],kkl[9])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(89, 158, 101) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk10" onclick="ppcset(kkp[10],kkd[10],kkl[10])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(79, 158, 92) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk11" onclick="ppcset(kkp[11],kkd[11],kkl[11])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(69, 158, 84) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk12" onclick="ppcset(kkp[12],kkd[12],kkl[12])" bgcolor="#dddddd" height="10"></td></tr><tr><td style="background: rgb(99, 138, 106) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk13" onclick="ppcset(kkp[13],kkd[13],kkl[13])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(89, 138, 97) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk14" onclick="ppcset(kkp[14],kkd[14],kkl[14])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(79, 138, 89) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk15" onclick="ppcset(kkp[15],kkd[15],kkl[15])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(69, 138, 80) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk16" onclick="ppcset(kkp[16],kkd[16],kkl[16])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(59, 138, 72) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk17" onclick="ppcset(kkp[17],kkd[17],kkl[17])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(48, 138, 63) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk18" onclick="ppcset(kkp[18],kkd[18],kkl[18])" bgcolor="#dddddd" height="10"></td></tr><tr><td style="background: rgb(79, 117, 85) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk19" onclick="ppcset(kkp[19],kkd[19],kkl[19])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(69, 117, 77) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk20" onclick="ppcset(kkp[20],kkd[20],kkl[20])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(59, 117, 68) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk21" onclick="ppcset(kkp[21],kkd[21],kkl[21])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(48, 117, 60) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk22" onclick="ppcset(kkp[22],kkd[22],kkl[22])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(38, 117, 51) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk23" onclick="ppcset(kkp[23],kkd[23],kkl[23])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(28, 117, 43) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk24" onclick="ppcset(kkp[24],kkd[24],kkl[24])" bgcolor="#dddddd" height="10"></td></tr><tr><td style="background: rgb(59, 97, 65) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk25" onclick="ppcset(kkp[25],kkd[25],kkl[25])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(48, 97, 57) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk26" onclick="ppcset(kkp[26],kkd[26],kkl[26])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(38, 97, 48) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk27" onclick="ppcset(kkp[27],kkd[27],kkl[27])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(28, 97, 40) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk28" onclick="ppcset(kkp[28],kkd[28],kkl[28])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(18, 97, 31) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk29" onclick="ppcset(kkp[29],kkd[29],kkl[29])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(8, 97, 23) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk30" onclick="ppcset(kkp[30],kkd[30],kkl[30])" bgcolor="#dddddd" height="10"></td></tr><tr><td style="background: rgb(38, 77, 45) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk31" onclick="ppcset(kkp[31],kkd[31],kkl[31])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(28, 77, 36) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk32" onclick="ppcset(kkp[32],kkd[32],kkl[32])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(18, 77, 28) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk33" onclick="ppcset(kkp[33],kkd[33],kkl[33])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(8, 77, 19) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk34" onclick="ppcset(kkp[34],kkd[34],kkl[34])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(221, 221, 221) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk35" onclick="ppcset(kkp[35],kkd[35],kkl[35])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(221, 221, 221) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kk36" onclick="ppcset(kkp[36],kkd[36],kkl[36])" bgcolor="#dddddd" height="10"></td></tr></tbody></table>
+</td><td>
+<table bgcolor="#dddddd" height="100" width="100"><tbody><tr><td style="background: rgb(140, 179, 153) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk1" onclick="ppcset(kkkp[1],kkkd[1],kkkl[1])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(130, 179, 146) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk2" onclick="ppcset(kkkp[2],kkkd[2],kkkl[2])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(120, 179, 139) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk3" onclick="ppcset(kkkp[3],kkkd[3],kkkl[3])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(110, 179, 133) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk4" onclick="ppcset(kkkp[4],kkkd[4],kkkl[4])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(99, 179, 126) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk5" onclick="ppcset(kkkp[5],kkkd[5],kkkl[5])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(89, 179, 119) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk6" onclick="ppcset(kkkp[6],kkkd[6],kkkl[6])" bgcolor="#dddddd" height="10"></td></tr><tr><td style="background: rgb(120, 158, 133) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk7" onclick="ppcset(kkkp[7],kkkd[7],kkkl[7])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(110, 158, 126) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk8" onclick="ppcset(kkkp[8],kkkd[8],kkkl[8])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(99, 158, 119) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk9" onclick="ppcset(kkkp[9],kkkd[9],kkkl[9])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(89, 158, 112) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk10" onclick="ppcset(kkkp[10],kkkd[10],kkkl[10])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(79, 158, 105) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk11" onclick="ppcset(kkkp[11],kkkd[11],kkkl[11])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(69, 158, 99) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk12" onclick="ppcset(kkkp[12],kkkd[12],kkkl[12])" bgcolor="#dddddd" height="10"></td></tr><tr><td style="background: rgb(99, 138, 112) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk13" onclick="ppcset(kkkp[13],kkkd[13],kkkl[13])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(89, 138, 105) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk14" onclick="ppcset(kkkp[14],kkkd[14],kkkl[14])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(79, 138, 99) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk15" onclick="ppcset(kkkp[15],kkkd[15],kkkl[15])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(69, 138, 92) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk16" onclick="ppcset(kkkp[16],kkkd[16],kkkl[16])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(59, 138, 85) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk17" onclick="ppcset(kkkp[17],kkkd[17],kkkl[17])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(48, 138, 78) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk18" onclick="ppcset(kkkp[18],kkkd[18],kkkl[18])" bgcolor="#dddddd" height="10"></td></tr><tr><td style="background: rgb(79, 117, 92) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk19" onclick="ppcset(kkkp[19],kkkd[19],kkkl[19])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(69, 117, 85) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk20" onclick="ppcset(kkkp[20],kkkd[20],kkkl[20])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(59, 117, 78) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk21" onclick="ppcset(kkkp[21],kkkd[21],kkkl[21])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(48, 117, 71) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk22" onclick="ppcset(kkkp[22],kkkd[22],kkkl[22])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(38, 117, 65) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk23" onclick="ppcset(kkkp[23],kkkd[23],kkkl[23])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(28, 117, 58) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk24" onclick="ppcset(kkkp[24],kkkd[24],kkkl[24])" bgcolor="#dddddd" height="10"></td></tr><tr><td style="background: rgb(59, 97, 71) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk25" onclick="ppcset(kkkp[25],kkkd[25],kkkl[25])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(48, 97, 65) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk26" onclick="ppcset(kkkp[26],kkkd[26],kkkl[26])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(38, 97, 58) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk27" onclick="ppcset(kkkp[27],kkkd[27],kkkl[27])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(28, 97, 51) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk28" onclick="ppcset(kkkp[28],kkkd[28],kkkl[28])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(18, 97, 44) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk29" onclick="ppcset(kkkp[29],kkkd[29],kkkl[29])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(8, 97, 37) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk30" onclick="ppcset(kkkp[30],kkkd[30],kkkl[30])" bgcolor="#dddddd" height="10"></td></tr><tr><td style="background: rgb(38, 77, 51) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk31" onclick="ppcset(kkkp[31],kkkd[31],kkkl[31])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(28, 77, 44) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk32" onclick="ppcset(kkkp[32],kkkd[32],kkkl[32])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(18, 77, 37) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk33" onclick="ppcset(kkkp[33],kkkd[33],kkkl[33])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(8, 77, 31) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk34" onclick="ppcset(kkkp[34],kkkd[34],kkkl[34])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(221, 221, 221) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk35" onclick="ppcset(kkkp[35],kkkd[35],kkkl[35])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(221, 221, 221) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkk36" onclick="ppcset(kkkp[36],kkkd[36],kkkl[36])" bgcolor="#dddddd" height="10"></td></tr></tbody></table>
+</td><td>
+<table bgcolor="#dddddd" height="100" width="100"><tbody><tr><td style="background: rgb(140, 179, 159) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk1" onclick="ppcset(kkkkp[1],kkkkd[1],kkkkl[1])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(130, 179, 154) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk2" onclick="ppcset(kkkkp[2],kkkkd[2],kkkkl[2])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(120, 179, 149) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk3" onclick="ppcset(kkkkp[3],kkkkd[3],kkkkl[3])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(110, 179, 144) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk4" onclick="ppcset(kkkkp[4],kkkkd[4],kkkkl[4])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(99, 179, 139) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk5" onclick="ppcset(kkkkp[5],kkkkd[5],kkkkl[5])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(89, 179, 134) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk6" onclick="ppcset(kkkkp[6],kkkkd[6],kkkkl[6])" bgcolor="#dddddd" height="10"></td></tr><tr><td style="background: rgb(120, 158, 139) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk7" onclick="ppcset(kkkkp[7],kkkkd[7],kkkkl[7])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(110, 158, 134) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk8" onclick="ppcset(kkkkp[8],kkkkd[8],kkkkl[8])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(99, 158, 129) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk9" onclick="ppcset(kkkkp[9],kkkkd[9],kkkkl[9])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(89, 158, 124) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk10" onclick="ppcset(kkkkp[10],kkkkd[10],kkkkl[10])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(79, 158, 119) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk11" onclick="ppcset(kkkkp[11],kkkkd[11],kkkkl[11])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(69, 158, 113) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk12" onclick="ppcset(kkkkp[12],kkkkd[12],kkkkl[12])" bgcolor="#dddddd" height="10"></td></tr><tr><td style="background: rgb(99, 138, 119) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk13" onclick="ppcset(kkkkp[13],kkkkd[13],kkkkl[13])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(89, 138, 113) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk14" onclick="ppcset(kkkkp[14],kkkkd[14],kkkkl[14])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(79, 138, 108) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk15" onclick="ppcset(kkkkp[15],kkkkd[15],kkkkl[15])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(69, 138, 103) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk16" onclick="ppcset(kkkkp[16],kkkkd[16],kkkkl[16])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(59, 138, 98) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk17" onclick="ppcset(kkkkp[17],kkkkd[17],kkkkl[17])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(48, 138, 93) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk18" onclick="ppcset(kkkkp[18],kkkkd[18],kkkkl[18])" bgcolor="#dddddd" height="10"></td></tr><tr><td style="background: rgb(79, 117, 98) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk19" onclick="ppcset(kkkkp[19],kkkkd[19],kkkkl[19])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(69, 117, 93) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk20" onclick="ppcset(kkkkp[20],kkkkd[20],kkkkl[20])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(59, 117, 88) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk21" onclick="ppcset(kkkkp[21],kkkkd[21],kkkkl[21])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(48, 117, 83) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk22" onclick="ppcset(kkkkp[22],kkkkd[22],kkkkl[22])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(38, 117, 78) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk23" onclick="ppcset(kkkkp[23],kkkkd[23],kkkkl[23])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(28, 117, 73) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk24" onclick="ppcset(kkkkp[24],kkkkd[24],kkkkl[24])" bgcolor="#dddddd" height="10"></td></tr><tr><td style="background: rgb(59, 97, 78) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk25" onclick="ppcset(kkkkp[25],kkkkd[25],kkkkl[25])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(48, 97, 73) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk26" onclick="ppcset(kkkkp[26],kkkkd[26],kkkkl[26])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(38, 97, 68) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk27" onclick="ppcset(kkkkp[27],kkkkd[27],kkkkl[27])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(28, 97, 62) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk28" onclick="ppcset(kkkkp[28],kkkkd[28],kkkkl[28])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(18, 97, 57) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk29" onclick="ppcset(kkkkp[29],kkkkd[29],kkkkl[29])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(8, 97, 52) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk30" onclick="ppcset(kkkkp[30],kkkkd[30],kkkkl[30])" bgcolor="#dddddd" height="10"></td></tr><tr><td style="background: rgb(38, 77, 57) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk31" onclick="ppcset(kkkkp[31],kkkkd[31],kkkkl[31])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(28, 77, 52) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk32" onclick="ppcset(kkkkp[32],kkkkd[32],kkkkl[32])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(18, 77, 47) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk33" onclick="ppcset(kkkkp[33],kkkkd[33],kkkkl[33])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(8, 77, 42) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk34" onclick="ppcset(kkkkp[34],kkkkd[34],kkkkl[34])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(221, 221, 221) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk35" onclick="ppcset(kkkkp[35],kkkkd[35],kkkkl[35])" bgcolor="#dddddd" height="10"></td><td style="background: rgb(221, 221, 221) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="kkkk36" onclick="ppcset(kkkkp[36],kkkkd[36],kkkkl[36])" bgcolor="#dddddd" height="10"></td></tr></tbody></table>
+</td></tr></tbody></table>
+
+
+
+
+
+<br>
+<ta></ta><table style="background: rgb(64, 127, 64) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" id="csc" bgcolor="#dddddd" height="50" width="150"><tbody><tr><td>
+
+color<input name="c" size="10" style="background: rgb(221, 221, 221) none repeat scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" type="text">
+</td></tr></tbody></table>
+<input name="cx" size="10" type="hidden">
+<input name="cy" size="10" type="hidden">
+<input name="cx1" size="10" type="hidden">
+<input name="cy2" size="10" type="hidden">
+
+
+
+
+
+
+<br>
+<table id="tb1"><tbody><tr>
+<td onclick="tb1cs()">背景色彩<input name="tb1c" size="7" type="text"></td>
+<td onclick="f1cs()" id="f1"><font size="1">範例文字=1</font><br><font size="2">範例文字=2</font><br><font size="3">範例文字=3</font><br><font size="4">範例文字=4</font><br><font size="5">範例文字=5</font><br><input name="f1c" size="8" type="text"></td>
+<td onclick="f2cs()" id="f2"><font size="1">範例文字=1</font><br><font size="2">範例文字=2</font><br><font size="3">範例文字=3</font><br><font size="4">範例文字=4</font><br><font size="5">範例文字=5</font><br><input name="f2c" size="8" type="text"></td>
+<td onclick="f3cs()" id="f3"><font size="1">範例文字=1</font><br><font size="2">範例文字=2</font><br><font size="3">範例文字=3</font><br><font size="4">範例文字=4</font><br><font size="5">範例文字=5</font><br><input name="f3c" size="8" type="text"></td>
+<td onclick="f4cs()" id="f4"><font size="1">範例文字=1</font><br><font size="2">範例文字=2</font><br><font size="3">範例文字=3</font><br><font size="4">範例文字=4</font><br><font size="5">範例文字=5</font><br><input name="f4c" size="8" type="text"></td>
+<td onclick="f5cs()" id="f5"><font size="1">範例文字=1</font><br><font size="2">範例文字=2</font><br><font size="3">範例文字=3</font><br><font size="4">範例文字=4</font><br><font size="5">範例文字=5</font><br><input name="f5c" size="8" type="text"></td>
+</tr>
+
+  </tbody></table>
+
+</form></td></tr></tbody></table></center>
+<p align="center">
+</script><font size=5 color="#9900ff">
+<marquee direction="up" behavior="slide" bgcolor="#b76fff">
+<div style="text-align: center;"><script src="http://ts.joch.gq/cf.php?username=leo93114"></script><br />
+聯絡我們<br /><a href="mailto:jochgvofd@gmail.com"> <img src="image/taddyshen.png" /><br /><a href="https://line.me/ti/p/%40trr7250q"><img height="36" border="0" alt="好友人數" src="http://biz.line.naver.jp/line_business/img/btn/addfriends_zh-Hant.png"></a><br /><a href="https://www.facebook.com/jochgvofdweb">Facebook粉絲團<a><br />
+© 2012-2016 <a href="http://jochgvofd.com" target="_blank">次是慶宇工作室</a> - © 2012-2016 <a href="http://wartw.com.tw/" target="_blank">風雨人多元工作室</a>合作</div>
+</font>
+</marquee></font></div></p>
+</body></html>
+</span>
